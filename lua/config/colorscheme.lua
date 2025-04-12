@@ -1,14 +1,14 @@
-local present, tokyonight = pcall(require, "tokyonight")
+local present, everforest = pcall(require, "everforest")
 if not present then
   return
 end
 
-local c = require("tokyonight.colors").setup()
+local c = require("everforest.colors").setup()
 
 -- ╭──────────────────────────────────────────────────────────╮
 -- │ Setup Colorscheme                                        │
 -- ╰──────────────────────────────────────────────────────────╯
-tokyonight.setup({
+everforest.setup({
   style = "night",
   transparent = vim.g.neovide and true or false, -- Enable this to disable setting the background color
   terminal_colors = true,                        -- Configure the colors used when opening a `:terminal` in Neovim
